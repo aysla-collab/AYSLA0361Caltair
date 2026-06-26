@@ -85,6 +85,27 @@
             background-color: var(--secondary-color);
         }
 
+        /* Container Responsivo para o Vídeo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 1rem;
+            border-radius: 6px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         /* Alerta de Cuidado */
         .alerta {
             background-color: #ffebee;
@@ -119,6 +140,14 @@
         <section id="introducao">
             <h2>O que são Plantas Medicinais?</h2>
             <p>Plantas medicinais são vegetais que possuem substâncias ativas (princípios ativos) capazes de auxiliar na prevenção, alívio ou tratamento de diversas condições de saúde. O uso dessas plantas é uma das práticas terapêuticas mais antigas da humanidade, servindo como base para a medicina tradicional e para o desenvolvimento de medicamentos modernos.</p>
+        </section>
+
+        <section id="video-informativo">
+            <h2>Vídeo Informativo</h2>
+            <p>Assista abaixo a um conteúdo selecionado sobre o universo das plantas medicinais e seus usos corretos:</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H25gkWutB6w?si=buKQ7-OXHklxwGVC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section id="principais-plantas">
